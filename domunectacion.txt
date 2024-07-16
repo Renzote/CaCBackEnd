@@ -1,0 +1,184 @@
+//CLIENTES//
+
+GET
+getClients
+localhost:3000/client/
+
+
+GET
+getClientById
+localhost:3000/client/9
+
+
+POST
+createClient
+localhost:3000/client/
+
+
+Body
+raw (json)
+json
+{
+    "name": "Jack",
+    "lastname": "Sparrow",
+    "phone": "115462358"
+}
+PUT
+updateClient
+localhost:3000/client/1
+
+
+Body
+raw (json)
+json
+{
+    "name": "Micaela", "lastname": "Perez", "phone": "1151689473"
+}
+    
+
+
+DELETE
+deleteClient
+localhost:3000/client/7
+
+
+//PRODUCTOS//
+
+
+GET
+getProducts
+localhost:3000/product/
+
+
+GET
+getProductById
+localhost:3000/product/4
+
+
+POST
+createProduct
+localhost:3000/product/
+
+
+Body
+raw (json)
+json
+{
+    "name": "Remera jersey",
+    "color": "Negro",
+    "size": "S",
+    "price": "18.706",
+    "category": "2"
+}
+PUT
+updateClient
+localhost:3000/product/1
+
+
+Body
+raw (json)
+json
+{
+"name": "Buzo oversize",
+"color": "Blanco",
+"size": "S",
+"price": "22420",
+"category": "1"
+
+}
+DELETE
+deleteProduct
+localhost:3000/product/7
+
+
+//PEDIDOS//
+
+
+GET
+getOrders
+localhost:3000/order/
+
+
+GET
+getOrderById
+localhost:3000/order/1
+
+
+POST
+createOrder
+localhost:3000/order/
+
+
+Body
+raw (json)
+json
+{
+    "idClient": "8",
+    "price": "24851",
+    "date": "2024-02-7"
+}
+PUT
+updateOrder
+localhost:3000/order/1
+
+
+Body
+raw (json)
+json
+{
+"idClient": "3",
+"price": "41000",
+"date": "2024-10-10"
+}
+GET
+deleteOrder
+
+
+//CATEGORIAS//
+
+
+GET
+getAllCategory
+localhost:3000/category/
+
+
+GET
+getCategoryById
+localhost:3000/category/1
+
+
+POST
+createCategory
+localhost:3000/category/
+
+
+Body
+raw (json)
+json
+{
+    "name": "otoño"
+}
+PUT
+updateCategory
+localhost:3000/category/3
+
+
+Body
+raw (json)
+json
+{
+    "name": "otoño"
+}
+DEL
+deleteCategory
+
+
+GET
+health
+localhost:3000/health
+
+
+GET
+health db
+localhost:3000/health/db
+
